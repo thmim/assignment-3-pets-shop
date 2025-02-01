@@ -41,9 +41,9 @@
         },
         keyframes: {
           customPing: {
-            '0%': { transform: 'scale(0.5)', opacity: '1' },
-            '75%': { transform: 'scale(1)', opacity: '0' },
-            '100%': { transform: 'scale(1.5)', opacity: '0' },
+            '0%': { transform: 'scale(0.2)', opacity: '1' },
+            '75%': { transform: 'scale(0.6)', opacity: '0' },
+            '100%': { transform: 'scale(1)', opacity: '0' },
           },
         },
               
@@ -242,7 +242,7 @@
          <!-- catagories section end-->
           <section class="mt-24 bg-bg-primary mb-16">
             <h2 class="adlam-display-font font-normal text-4xl ml-5 p-10">Trending Pet Products</h2>
-            <div class="w-11/12 mx-auto flex flex-col lg:flex-row lg:justify-between pb-16">
+            <div class="w-11/12 mx-auto flex flex-col lg:flex-row lg:justify-between gap-10 pb-16">
               <div class="w-max-[520px] h-[440px] bg-bg-card rounded-xl mt-7 p-7 md:p-10 bg-[url('./c1-assets/cute-pet-small.png')] bg-no-repeat bg-right-bottom">
                 <!-- big-card -->
                  <h2 class="adlam-display-font font-normal text-xl">T-Shirt For Dogs</h2>
@@ -384,19 +384,68 @@
               <!-- last -->
             </div>
           </section>
+          <section class="mt-20 mb-16 w-11/12 mx-auto">
+            <!-- latest item section -->
+            <h2 class="adlam-display-font font-normal text-4xl mb-20">Our Latest Items</h2>
+            <div class="lg:grid lg:grid-cols-3 lg:space-x-5">
+            <div class="card card-compact bg-base-100 max-w-96 shadow-xl mb-8">
+              <figure>
+                <img class="p-10 bg-bg-card"
+                  src="./c1-assets/cat-box-7852492_640.jpg"
+                  alt="" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title adlam-display-font font-bold text-3xl">Cat Box</h2>
+                <p class="font-sora">Spacious, durable, and cozy cat box for ultimate feline comfort.</p>
+                <div class="card-actions justify-end">
+                  <button class="btn bg-primary-btn">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-compact bg-base-100 max-w-96 shadow-xl mb-8">
+              <figure>
+                <img class="p-10 bg-bg-card"
+                  src="./c1-assets/cat-box-7852492_640.jpg"
+                  alt="" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title adlam-display-font font-bold text-3xl">Cat Box</h2>
+                <p class="font-sora">Spacious, durable, and cozy cat box for ultimate feline comfort.</p>
+                <div class="card-actions justify-end">
+                  <button class="btn bg-primary-btn">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-compact bg-base-100 max-w-96 shadow-xl mb-8">
+              <figure>
+                <img class="p-10 bg-bg-card"
+                  src="./c1-assets/cat-box-7852492_640.jpg"
+                  alt="" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title adlam-display-font font-bold text-3xl">Cat Box</h2>
+                <p class="font-sora">Spacious, durable, and cozy cat box for ultimate feline comfort.</p>
+                <div class="card-actions justify-end">
+                  <button class="btn bg-primary-btn">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </section>
           <section class="w-11/12 mx-auto mb-96 lg:mb-64">
             <!-- price section -->
              <h3 class="adlam-display-font font-normal text-4xl mb-6">Everyday low Price</h3>
              <div class="lg:flex lg:gap-6">
-             <div class="bg-gradient-to-r from-primary-gra-left to-primary-gra-right flex items-center rounded-xl w-full lg:w-4/6 h-[450px] p-11 justify-between  mb-10">
-                <div class="">
+             <div class="bg-gradient-to-r from-primary-gra-left to-primary-gra-right lg:flex lg:items-center rounded-xl w-full lg:w-4/6 h-[450px] lg:p-11 justify-between  mb-10 relative">
+                <div class="p-6">
                 <!-- big-card -->
-                 <p class="font-sora font-normal text-xl mb-5">Under Price</p>
+                 <p class="hidden lg:block font-sora font-normal text-xl mb-5">Under Price</p>
                  <h3 class="adlam-display-font font-normal text-3xl mb-5">Pet Grooming Mitt</h3>
-                 <p class="adlam-display-font font-normal text-2xl text-white mb-5">(Easy Hair Removal)</p>
-                 <h2 class="adlam-display-font font-normal text-5xl mb-5">$7.99</h2>
+                 <p class="hidden lg:block adlam-display-font font-normal text-2xl text-white mb-5">(Easy Hair Removal)</p>
+                 <h2 class="adlam-display-font font-normal text-white lg:text-black text-5xl mb-5">$7.99</h2>
                 </div>
-                 <div class="w-96">
+                 <div class="w-72 lg:w-80 absolute bottom-0 right-0">
                   <img class="" src="./c1-assets/cute-dog-mid.png" alt="">
                  </div>
                 </div>
@@ -408,7 +457,7 @@
                    
                    <h2 class="adlam-display-font font-normal text-5xl text-yellow-400 mb-5">$7.99</h2>
                   </div>
-                   <div class="absolute bottom-0 right-0">
+                   <div class="absolute bottom-0 right-0 w-72">
                     <img src="./c1-assets/cute-pet-mid.png" alt="">
                    </div>
                 <div>
