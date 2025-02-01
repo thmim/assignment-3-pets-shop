@@ -36,6 +36,16 @@
         tailwind.config = {
           theme: {
             extend: {
+              animation: {
+          'custom-ping': 'customPing 3.5s cubic-bezier(0, 0, 0.2, 1) infinite',
+        },
+        keyframes: {
+          customPing: {
+            '0%': { transform: 'scale(0.5)', opacity: '1' },
+            '75%': { transform: 'scale(1)', opacity: '0' },
+            '100%': { transform: 'scale(1.5)', opacity: '0' },
+          },
+        },
               
              colors: {
                 clifford: '#da373d',
@@ -62,7 +72,7 @@
 <body class="">
     <header>
       <!-- nav section -->
-        <nav class="font-sora bg-bg-primary border-b-2 border-text-primary md:border-hidden">
+        <nav class="font-sora bg-bg-primary border-b-2 border-text-primary md:border-hidden mb-10">
           <div class="navbar w-11/12 mx-auto">
             <div class="navbar-start">
               <div class="flex items-center gap-3">
@@ -114,16 +124,24 @@
               </div>
               </div>
               </nav>
+              <div class="text-center animate-custom-ping overflow-hidden">
+              <h1 class=" font-extrabold text-yellow-500 text-5xl mb-10">Welcome</h1>
+            </div>
          <!-- banner section start -->
-          <section class="mt-16 w-11/12 mx-auto">
+          <section class="w-11/12 mx-auto">
              
-          <div class="bg-[url('./c1-assets/cat-big.png')] border border-black h-screen bg-contain bg-no-repeat bg-center lg:bg-left-top">
+          <div class="md:relative">
+            <div class="md:absolute top-40 z-10">
+              <h1 class="adlam-display-font font-normal text-5xl mb-5">Pamper Your Pet,<br> Because They Deserve<br> the Bes</h1>
+              <p class="font-sora font-normal text-base mb-5">Discover a world of treats, toys, and essentials handpicked for<br> your furry friends. Shop now and make tails wag with joy!</p>
+              <button class="btn bg-primary-btn">Find a pet</button>
+          </div>
+              
+            <div class="">
+              <img src="./c1-assets/cat-big.png" alt="">
+            </div>
             
-              <div>
-                <h1 class="adlam-display-font font-normal text-5xl mb-5">Pamper Your Pet,<br> Because They Deserve<br> the Bes</h1>
-                <p class="font-sora font-normal text-base mb-5">Discover a world of treats, toys, and essentials handpicked for<br> your furry friends. Shop now and make tails wag with joy!</p>
-                <button class="btn bg-primary-btn">Find a pet</button>
-                </div>
+                
              
           </div>
          
@@ -404,10 +422,10 @@
           <!-- footer section -->
            <div class="w-11/12 mx-auto relative">
             <div class="lg:flex gap-10 rounded-xl absolute lg:bottom-[55%] bottom-[69%] right-2 left-2 
-            lg:left-50 items-center bg-bg-primary p-7 lg:text-start text-center">
+            lg:left-50 items-center bg-bg-primary p-7 lg:p-9 lg:text-start text-center">
               <!-- footer-card -->
-               <div class="w-52 lg:w-72">
-                <img src="./c1-assets/cute-pet-mid.png" alt="">
+               <div class="w-52 lg:w-72 mx-auto lg:mx-0">
+                <img class="" src="./c1-assets/cute-pet-mid.png" alt="">
                </div>
                <div>
                 <h2 class="adlam-display-font font-normal text-4xl mb-5">Get Pawsome News!</h2>
@@ -421,7 +439,7 @@
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-3 pt-[500px] pb-[150px] lg:pt-72 lg:pb-20">
             <!-- parent div -->
-             <div class="mb-5">
+             <div class="mb-7">
             <div class="flex gap-3 items-center mb-3">
               <img src="./c1-assets/logo-footer.png" alt="">
               <h3 class="font-sora font-normal text-2xl">Browse4Pets</h3>
@@ -430,17 +448,19 @@
             </div>
             <!-- secound -->
             <div class="lg:ml-72">
-                <p class="font-sora font-normal text-base mb-4">Find a pet</p>
-                <p class="font-sora font-normal text-base mb-4">Breeds</p>
-                <p class="font-sora font-normal text-base mb-4">Contact us</p>
+                <p class="font-sora font-normal text-base mb-6">Find a pet</p>
+                <p class="font-sora font-normal text-base mb-6">Breeds</p>
+                <p class="font-sora font-normal text-base mb-6">Contact us</p>
             </div>
-            <div class="lg:ml-80">
-               <p class="mb-4">Follow Us</p>
-               
+            <div class="lg:ml-80 flex flex-col justify-end">
+
+               <p class="">Follow Us</p>
+               <div>
                <i class="fa-brands fa-facebook mr-3"></i>
                <i class="fa-brands fa-instagram mr-3"></i>
                <i class="fa-brands fa-linkedin mr-3"></i>
                <i class="fa-brands fa-youtube"></i>
+              </div>
             </div>
             
            </div>
